@@ -1,15 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { China3DComponent } from './china-3d/china-3d.component';
+import { FmMapComponent } from './fm-map/fm-map.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    China3DComponent,
+    FmMapComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
